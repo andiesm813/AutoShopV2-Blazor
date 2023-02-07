@@ -139,8 +139,11 @@
     align-content: flex-start;
     position: relative;
     min-width: 240px;
-    min-height: 50px;
+    min-height: 240px;
     max-width: 560px;
+    max-height: 560px;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
 .group_3 {
     flex-wrap: wrap;
@@ -341,6 +344,8 @@
 }
 .large-image {
     object-fit: contain;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .content_1 {
     height: max-content;
