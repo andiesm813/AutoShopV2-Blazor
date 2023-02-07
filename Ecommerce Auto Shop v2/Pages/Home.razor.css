@@ -236,7 +236,7 @@
 }
 .select {
     height: max-content;
-    min-width: 100px;
+    min-width: 120px;
     flex-grow: 1;
     flex-basis: 0;
 }
