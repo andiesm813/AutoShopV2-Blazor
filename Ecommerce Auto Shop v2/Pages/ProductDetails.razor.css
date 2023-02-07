@@ -6,7 +6,19 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
+    overflow: auto;
     height: 100%;
+}
+.page-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: auto;
+    position: relative;
+    min-width: 830px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 .inner-pages-header {
     background-color: #151725;
@@ -19,6 +31,7 @@
     position: relative;
     min-width: 50px;
     min-height: 140px;
+    flex-shrink: 0;
 }
 .content {
     justify-content: flex-start;
@@ -27,6 +40,7 @@
     position: relative;
     padding: 48px 24px;
     min-width: 50px;
+    flex-shrink: 0;
 }
 .group {
     justify-content: flex-start;
@@ -53,69 +67,69 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+    gap: 32px;
     position: relative;
     min-height: 50px;
+    flex-grow: 1;
     flex-shrink: 0;
 }
-.group_3 {
+.images {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
     gap: 8px;
-    margin: 0 8px 0 0;
-    min-width: 100px;
-    min-height: 100px;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.thumbs {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    position: relative;
     flex-shrink: 0;
 }
-.group_4 {
+.thumb-1 {
     background-image: url("assets/Alternator1.jpg");
     background-size: cover;
-    border-color: hsla(var(--ig-gray-200));
-    border-width: 1px;
-    border-style: solid;
-    position: relative;
-    min-width: 100px;
-    min-height: 100px;
-}
-.group_5 {
-    background-image: url("assets/Alternator3.png");
-    background-size: cover;
     background-repeat: no-repeat;
-    border-color: hsla(var(--ig-gray-200));
-    border-width: 1px;
-    border-style: solid;
-    position: relative;
-    min-width: 100px;
-    min-height: 100px;
-}
-.group_6 {
-    background-image: url("assets/Alternator2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-color: hsla(var(--ig-gray-200));
-    border-width: 1px;
-    border-style: solid;
-    position: relative;
-    min-width: 100px;
-    min-height: 100px;
-}
-.group_7 {
-    border-color: hsla(var(--ig-gray-200));
-    border-width: 1px;
-    border-style: solid;
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
     position: relative;
-    margin: 0 32px 0 0;
-    min-width: 332px;
-    min-height: 332px;
-    max-width: 560px;
-    max-height: 560px;
-    flex-grow: 1;
-    flex-basis: 50%;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
 }
-.group_8 {
+.thumb-2 {
+    background-image: url("assets/Alternator2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    position: relative;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.thumb {
+    background-image: url("assets/Alternator3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    position: relative;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.group_3 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -123,17 +137,17 @@
     gap: 8px;
     position: relative;
     min-height: 50px;
-    flex-grow: 1;
-    flex-basis: 50%;
+    flex-grow: 2;
+    flex-basis: 0;
 }
-.group_9 {
+.group_4 {
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
     position: relative;
     min-width: 50px;
 }
-.group_10 {
+.group_5 {
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
@@ -141,7 +155,7 @@
     margin: 0 0 16px;
     min-width: 50px;
 }
-.group_11 {
+.group_6 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -150,18 +164,19 @@
     min-width: 50px;
     min-height: 50px;
 }
-.group_12 {
+.group_7 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
     position: relative;
     margin: 0 40px 0 0;
+    min-width: 280px;
     min-height: 50px;
     max-width: 500px;
     flex-grow: 1;
     flex-basis: 30%;
 }
-.group_13 {
+.group_8 {
     background-color: transparent;
     justify-content: flex-start;
     align-items: baseline;
@@ -170,7 +185,7 @@
     min-width: 50px;
     min-height: 32px;
 }
-.group_14 {
+.group_9 {
     background-color: hsla(var(--ig-gray-100));
     justify-content: flex-start;
     align-items: baseline;
@@ -179,18 +194,18 @@
     min-width: 50px;
     min-height: 32px;
 }
-.group_15 {
+.group_10 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
     position: relative;
     min-width: 50px;
     min-height: 50px;
-    max-width: 1000px;
+    max-width: 720px;
     flex-grow: 1;
     flex-basis: 70%;
 }
-.group_16 {
+.group_11 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
@@ -199,7 +214,7 @@
     min-width: 50px;
     min-height: 40px;
 }
-.group_17 {
+.group_12 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -214,7 +229,7 @@
     max-width: 200px;
     flex-shrink: 0;
 }
-.group_18 {
+.group_13 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -233,8 +248,9 @@
     padding: 24px;
     min-width: 50px;
     min-height: 170px;
+    flex-shrink: 0;
 }
-.group_19 {
+.group_14 {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
@@ -242,7 +258,7 @@
     min-width: 50px;
     min-height: 50px;
 }
-.group_20 {
+.group_15 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -266,7 +282,7 @@
     min-height: 50px;
     flex-shrink: 0;
 }
-.group_21 {
+.group_16 {
     justify-content: center;
     align-items: center;
     align-content: flex-start;
@@ -276,6 +292,7 @@
 }
 .image {
     object-fit: none;
+    height: 22px;
     min-width: 0;
     min-height: 0;
     flex-shrink: 0;
@@ -310,8 +327,12 @@
     min-width: min-content;
     flex-shrink: 0;
 }
-.image_1 {
+.product-image {
     object-fit: contain;
+    min-width: 280px;
+    min-height: 280px;
+    max-width: 560px;
+    max-height: 560px;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -393,7 +414,7 @@
     height: max-content;
     min-width: min-content;
 }
-.image_2 {
+.image_1 {
     height: 100%;
 }
 .h6 {

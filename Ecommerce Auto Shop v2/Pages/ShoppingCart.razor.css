@@ -8,6 +8,16 @@
     align-content: flex-start;
     height: 100%;
 }
+.page-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: auto;
+    position: relative;
+    min-width: 728px;
+    min-height: 50px;
+    flex-shrink: 0;
+}
 .inner-pages-header {
     background-color: #151725;
     background-image: url("assets/NewHeader.png");
@@ -19,18 +29,21 @@
     position: relative;
     min-width: 50px;
     min-height: 140px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .row-layout {
     display: flex;
 }
 .content {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: flex-start;
     position: relative;
     padding: 48px 24px;
     min-width: 50px;
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .group {
     justify-content: flex-start;
@@ -55,7 +68,6 @@
     align-items: stretch;
     align-content: flex-start;
     position: relative;
-    min-width: 600px;
     min-height: 50px;
     flex-grow: 1;
     flex-basis: 0;
@@ -105,7 +117,6 @@
     min-width: 280px;
     min-height: 50px;
     max-width: 400px;
-    flex-grow: 1;
     flex-shrink: 0;
 }
 .group_8 {
@@ -158,6 +169,8 @@
     padding: 24px;
     min-width: 50px;
     min-height: 170px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .group_12 {
     justify-content: flex-start;
@@ -186,9 +199,9 @@
     gap: 16px;
     position: relative;
     padding: 0 24px;
-    height: 50px;
     min-width: 50px;
     min-height: 50px;
+    flex-grow: 1;
     flex-shrink: 0;
 }
 .group_14 {
@@ -201,6 +214,7 @@
 }
 .image {
     object-fit: none;
+    height: 22px;
     min-width: 0;
     min-height: 0;
     flex-shrink: 0;
