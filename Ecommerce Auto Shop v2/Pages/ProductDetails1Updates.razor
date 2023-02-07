@@ -1,6 +1,7 @@
-@page "/product-details"
+@page "/product-details-1updates"
+@inject NavigationManager NavigationManager
 
-<div class="column-layout product-details-container">
+<div class="column-layout product-details-1updates-container">
     <div class="column-layout page-content">
         <div class="column-layout inner-pages-header">
             <img src="assets/AutoDeals_Logo.svg" class="image" />
@@ -11,13 +12,13 @@
         <div class="column-layout content">
             <div class="column-layout group">
                 <div class="row-layout group_1">
-                    <a class="typography__body-2 hyperlink">
+                    <a class="typography__body-2 hyperlink" @onclick="@(e => Navigate(""))">
                         Home
                     </a>
                     <p class="typography__body-2 text_1">
                         /
                     </p>
-                    <a class="typography__body-2 hyperlink">
+                    <a class="typography__body-2 hyperlink" @onclick="@(e => Navigate("all-products"))">
                         Auto Body Parts
                     </a>
                     <p class="typography__body-2 text_1">
@@ -40,21 +41,23 @@
                     </p>
                 </div>
                 <div class="row-layout group_2">
+                    <div class="row-layout images">
+                        <div class="column-layout thumbs">
+                            <div class="row-layout thumb-2"></div>
+                            <div class="row-layout thumb-1"></div>
+                            <div class="row-layout thumb"></div>
+                        </div>
+                        <div class="row-layout product-image">
+                            <img src="assets/Alternator1.jpg" class="large-image" />
+                        </div>
+                    </div>
                     <div class="column-layout group_3">
-                        <div class="group_4"></div>
-                        <div class="group_5"></div>
-                        <div class="group_6"></div>
-                    </div>
-                    <div class="row-layout group_7">
-                        <img src="assets/Alternator1.jpg" class="image_1" />
-                    </div>
-                    <div class="column-layout group_8">
                         <h5 class="content_1">
                             Gold Alternator
 
                         </h5>
-                        <div class="row-layout group_9">
-                            <IgbRating Value="4.5" Size="SizableComponentSize.Medium" class="rating" product-details-scope></IgbRating>
+                        <div class="row-layout group_4">
+                            <IgbRating Value="4.5" Size="SizableComponentSize.Medium" class="rating" product-details-1updates-scope></IgbRating>
                             <a class="typography__body-2 hyperlink_2">
                                 (2 customer reviews)
                             </a>
@@ -71,17 +74,17 @@
                         <p class="typography__body-2 text_4">
                             Generic Brand alternators are engineered to provide the amp output necessary to power today’s vehicles. Every unit is 100% NEW (not remanufactured) and made with proprietary components and processes to ensure maximum life and performance.
                         </p>
-                        <IgbBadge Variant="BadgeVariant.Success" class="badge" product-details-scope>
+                        <IgbBadge Variant="BadgeVariant.Success" class="badge" product-details-1updates-scope>
                             IN STOCK
                         </IgbBadge>
-                        <div class="row-layout group_10">
+                        <div class="row-layout group_5">
                             <span class="select">Select not yet available in Blazor</span>
                         </div>
                         <p class="typography__body-2 content_1">
                             Select delivery option:
                         </p>
                         <span class="button-group">ButtonGroup not yet available in Blazor</span>
-                        <IgbButton class="button" product-details-scope>
+                        <IgbButton class="button" product-details-1updates-scope>
                             <span class="material-icons">
                                 shopping_cart
                             </span>
@@ -90,12 +93,12 @@
                         </IgbButton>
                     </div>
                 </div>
-                <div class="row-layout group_11">
-                    <div class="column-layout group_12">
+                <div class="row-layout group_6">
+                    <div class="column-layout group_7">
                         <h5 class="h5">
                             Product Specifications
                         </h5>
-                        <div class="row-layout group_13">
+                        <div class="row-layout group_8">
                             <p class="typography__body-1 text_5">
                                 Part #    
                             </p>
@@ -103,7 +106,7 @@
                                 ABC123-456789
                             </p>
                         </div>
-                        <div class="row-layout group_14">
+                        <div class="row-layout group_9">
                             <p class="typography__body-1 text_5">
                                 SKU #    
                             </p>
@@ -111,7 +114,7 @@
                                 740988
                             </p>
                         </div>
-                        <div class="row-layout group_13">
+                        <div class="row-layout group_8">
                             <p class="typography__body-1 text_5">
                                 Weight
                             </p>
@@ -119,7 +122,7 @@
                                 10 lbs
                             </p>
                         </div>
-                        <div class="row-layout group_14">
+                        <div class="row-layout group_9">
                             <p class="typography__body-1 text_5">
                                 Type
                             </p>
@@ -127,7 +130,7 @@
                                 Alternator
                             </p>
                         </div>
-                        <div class="row-layout group_13">
+                        <div class="row-layout group_8">
                             <p class="typography__body-1 text_5">
                                 System Voltage    
                             </p>
@@ -135,7 +138,7 @@
                                 12 V
                             </p>
                         </div>
-                        <div class="row-layout group_14">
+                        <div class="row-layout group_9">
                             <p class="typography__body-1 text_6">
                                 Pulleys Included    
                             </p>
@@ -144,11 +147,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="column-layout group_15">
+                    <div class="column-layout group_10">
                         <h5 class="h5_1">
                             Product Description
                         </h5>
-                        <div class="row-layout group_16">
+                        <div class="row-layout group_11">
                             <span class="material-icons icon">
                                 check_circle
                             </span>
@@ -156,7 +159,7 @@
                                 Key components are greased to help with long term reliability in harsh conditions
                             </p>
                         </div>
-                        <div class="row-layout group_16">
+                        <div class="row-layout group_11">
                             <span class="material-icons icon">
                                 check_circle
                             </span>
@@ -164,7 +167,7 @@
                                 Every unit is built with 100% NEW components that are designed to meet the highest quality standards
                             </p>
                         </div>
-                        <div class="row-layout group_16">
+                        <div class="row-layout group_11">
                             <span class="material-icons icon">
                                 check_circle
                             </span>
@@ -180,10 +183,10 @@
                 <h5 class="h5_2">
                     Customers Also Purchased
                 </h5>
-                <div class="row-layout group_17">
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Alternator1.jpg" class="image_2" />
+                <div class="row-layout group_12">
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Alternator1.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -193,16 +196,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="4.5" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="4.5" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="content_2">
                                 $59.90
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -211,9 +214,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_91150104_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_91150104_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -223,16 +226,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="4" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="4" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="content_2">
                                 $19.90
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -241,9 +244,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_39703145_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_39703145_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -253,16 +256,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="3.5" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="3.5" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="content_2">
                                 $11.00
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_2" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_2" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -271,9 +274,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_20993125_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_20993125_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -283,16 +286,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="5" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="5" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="content_2">
                                 $24.50
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -301,9 +304,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_12011807_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_12011807_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -313,16 +316,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="3.5" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="3.5" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="content_2">
                                 $49.50
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -331,9 +334,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_114068560_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_114068560_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -343,16 +346,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="4.5" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="4.5" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="content_2">
                                 $44.50
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -361,9 +364,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_51128759_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_51128759_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -373,16 +376,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="5" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="5" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="h6">
                                 $34.50
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -391,9 +394,9 @@
                             </IgbButton>
                         </IgbCardActions>
                     </IgbCard>
-                    <IgbCard class="card" product-details-scope>
-                        <IgbCardMedia class="media-content" product-details-scope>
-                            <img src="assets/Depositphotos_63371615_l-2015.jpg" class="image_2" />
+                    <IgbCard class="card" product-details-1updates-scope>
+                        <IgbCardMedia class="media-content" product-details-1updates-scope>
+                            <img src="assets/Depositphotos_63371615_l-2015.jpg" class="image_1" />
                         </IgbCardMedia>
                         <IgbCardHeader>
                             <h3 slot="title">
@@ -403,16 +406,16 @@
                                 SKU: A1234-01
                             </h5>
                         </IgbCardHeader>
-                        <IgbCardContent class="body-content" product-details-scope>
-                            <div class="row-layout group_18">
-                                <IgbRating Value="4" Size="SizableComponentSize.Small" class="rating" product-details-scope></IgbRating>
+                        <IgbCardContent class="body-content" product-details-1updates-scope>
+                            <div class="row-layout group_13">
+                                <IgbRating Value="4" Size="SizableComponentSize.Small" class="rating" product-details-1updates-scope></IgbRating>
                             </div>
                             <h6 class="h6">
                                 $24.95
                             </h6>
                         </IgbCardContent>
-                        <IgbCardActions class="actions-content" product-details-scope>
-                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-scope>
+                        <IgbCardActions class="actions-content" product-details-1updates-scope>
+                            <IgbButton Variant="ButtonVariant.Flat" class="button_1" product-details-1updates-scope>
                                 <span class="material-icons">
                                     add_shopping_cart
                                 </span>
@@ -425,7 +428,7 @@
             </div>
         </div>
         <div class="row-layout sitemap">
-            <div class="column-layout group_19">
+            <div class="column-layout group_14">
                 <p class="typography__subtitle-2 content_1">
                     Contact Us
                 </p>
@@ -442,7 +445,7 @@
                     1-234-567-8901
                 </p>
             </div>
-            <div class="column-layout group_20">
+            <div class="column-layout group_15">
                 <p class="typography__subtitle-2 content_1">
                     Help
                 </p>
@@ -459,7 +462,7 @@
                     Shipping &amp; Returns
                 </p>
             </div>
-            <div class="column-layout group_20">
+            <div class="column-layout group_15">
                 <p class="typography__subtitle-2 content_1">
                     About Us
                 </p>
@@ -476,7 +479,7 @@
                     Reviews
                 </p>
             </div>
-            <div class="column-layout group_20">
+            <div class="column-layout group_15">
                 <p class="typography__subtitle-2 content_1">
                     Services
                 </p>
@@ -493,7 +496,7 @@
                     Find a Repair Shop
                 </p>
             </div>
-            <div class="column-layout group_20">
+            <div class="column-layout group_15">
                 <p class="typography__subtitle-2 content_1">
                     Blog
                 </p>
@@ -515,7 +518,7 @@
             <p class="typography__body-2 text_10">
                 Copyright ©2021 AutoShop.com, Inc. All Rights Reserved.
             </p>
-            <div class="row-layout group_21">
+            <div class="row-layout group_16">
                 <p class="typography__body-2 text_11">
                     Terms of Use
                 </p>
@@ -531,4 +534,8 @@
 </div>
 
 @code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
 }
