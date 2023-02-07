@@ -15,7 +15,7 @@
     align-content: flex-start;
     overflow: auto;
     position: relative;
-    min-width: 728px;
+    min-width: 800px;
     min-height: 50px;
     flex-shrink: 0;
 }
