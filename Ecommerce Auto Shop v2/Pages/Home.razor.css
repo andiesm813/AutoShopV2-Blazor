@@ -6,7 +6,19 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
+    overflow: auto;
     height: 100%;
+}
+.page-content {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: auto;
+    position: relative;
+    min-width: 728px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 .row-layout {
     display: flex;
@@ -19,10 +31,12 @@
     justify-content: center;
     align-items: center;
     align-content: flex-start;
+    overflow: hidden;
     position: relative;
     padding: 24px;
-    min-width: 50px;
     min-height: 240px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .group {
     justify-content: flex-start;
@@ -40,15 +54,16 @@
     align-content: flex-start;
     min-height: 50px;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-basis: 0;
 }
 .group_2 {
     background-color: hsla(var(--ig-surface-500));
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
-    min-width: 700px;
-    flex-shrink: 0;
+    min-width: 100px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .group_3 {
     background-color: hsla(var(--ig-warn-500));
@@ -56,10 +71,11 @@
     align-items: center;
     align-content: flex-start;
     position: relative;
-    min-width: 100px;
+    min-width: 80px;
     min-height: 50px;
+    max-width: 160px;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-basis: 0;
 }
 .content {
     justify-content: flex-start;
@@ -69,6 +85,7 @@
     padding: 48px 24px;
     min-width: 50px;
     min-height: 50px;
+    flex-grow: 1;
     flex-shrink: 0;
 }
 .group_4 {
@@ -108,6 +125,8 @@
     padding: 24px;
     min-width: 50px;
     min-height: 170px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .group_6 {
     justify-content: flex-start;
@@ -136,10 +155,10 @@
     gap: 16px;
     position: relative;
     padding: 0 24px;
-    height: 50px;
     min-width: 50px;
     min-height: 50px;
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .group_8 {
     justify-content: center;
@@ -216,15 +235,10 @@
     min-height: 40px;
 }
 .select {
-    width: 150px;
     height: max-content;
-    flex-shrink: 0;
-}
-.select_1 {
-    height: max-content;
-    min-width: 150px;
+    min-width: 100px;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-basis: 0;
 }
 .button {
     height: max-content;
