@@ -12,42 +12,11 @@ namespace TestEcommerce_Auto_Shop_v2
 			using var ctx = new TestContext();
 			ctx.JSInterop.Mode = JSRuntimeMode.Loose;
 			ctx.Services.AddIgniteUIBlazor(
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbBadgeModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRatingModule),
-				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule));
+				typeof(IgbRatingModule),
+				typeof(IgbBadgeModule),
+				typeof(IgbButtonModule),
+				typeof(IgbRippleModule),
+				typeof(IgbCardModule));
 			var componentUnderTest = ctx.RenderComponent<ProductDetails>();
 			Assert.NotNull(componentUnderTest);
 		}
